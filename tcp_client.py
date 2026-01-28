@@ -9,9 +9,17 @@ import socket
 
 def main():
     # TODO: Create a socket and connect it to the server at the designated IP and port
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.connect(('127.0.0.1', 6666))
     # TODO: Get user input and send it to the server using your TCP socket
+    message = input("Enter a message: ")
+    s.send(message.encode())
     # TODO: Receive a response from the server and close the TCP connection
-    pass
+    response = s.recv(1024)
+    print(response.decode())
+    s.close()
+
+
 
 
 if __name__ == '__main__':
