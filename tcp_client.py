@@ -10,7 +10,8 @@ import socket
 def main():
     # TODO: Create a socket and connect it to the server at the designated IP and port
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    s.connect(('127.0.0.1', 6666))
+    # s.connect(('127.0.0.1', 2000))
+    s.connect(('192.169.0.112', 2000))
     # TODO: Get user input and send it to the server using your TCP socket
     message = input("Enter a message: ")
     s.send(message.encode())
