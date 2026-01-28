@@ -1,8 +1,8 @@
 # Lab 2
 
 ## Team Members
-- team member 1
-- team member 2
+- Tali Gankin
+- Aiden Fox
 
 ## Lab Question Answers
 
